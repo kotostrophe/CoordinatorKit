@@ -1,11 +1,6 @@
 # CoordinatorKit
 
-<p align="left">
-    <a href="https://github.com/kotostrophe/CoordinatorKit/actions?query=workflow%3ACI">
-        <img src="https://github.com/kotostrophe/CoordinatorKit/workflows/CI/badge.svg" alt="CI Status">
-    </a>
-</p>
-
+[![CI](https://github.com/kotostrophe/CoordinatorKit/actions/workflows/CoordinatorKitTests.yml/badge.svg?branch=main&event=push)](https://github.com/kotostrophe/CoordinatorKit/actions/workflows/CoordinatorKitTests.yml)
 
 Lightweight library to construct node-like structure to start flows. Good solution for non-storyboard projects.
 
