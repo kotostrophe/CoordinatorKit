@@ -37,7 +37,6 @@ platform :ios do
     )
   end
 
-
   before_all do
     FileUtils.remove_dir './CodeCoverage', true
     FileUtils.remove_dir './UnitTests', true

@@ -5,8 +5,6 @@
 //  Created by Тарас Коцур on 19.06.2022.
 //
 
-#if os(iOS) || canImport(UIKit)
-
 public protocol CoordinatorLocatorProtocol: AnyObject {
     var coordiantors: [Coordinatable] { get }
     
@@ -29,6 +27,10 @@ public protocol CoordinatorLocatorProtocol: AnyObject {
         _ coordinator: Coordinator,
         by key: String
     ) -> Coordinator?
+    
+    
+    @discardableResult
+    func pop(by key: String) -> Coordinatable?
     
     @discardableResult
     func popAll() -> [Coordinatable]
@@ -108,6 +110,11 @@ public final class CoordinatorLocator: CoordinatorLocatorProtocol {
     }
     
     @discardableResult
+    public func pop(by key: String) -> Coordinatable? {
+        coordinatorsDictionary.removeValue(forKey: key) as? Coordinatable
+    }
+    
+    @discardableResult
     public func popAll() -> [Coordinatable] {
         let tempCoordinators = coordiantors
         coordinatorsDictionary.removeAll()
@@ -118,5 +125,3 @@ public final class CoordinatorLocator: CoordinatorLocatorProtocol {
         coordinatorsDictionary[key] as? Coordinatable
     }
 }
-
-#endif

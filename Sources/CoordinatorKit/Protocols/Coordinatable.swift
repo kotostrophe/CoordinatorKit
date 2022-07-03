@@ -5,8 +5,6 @@
 //  Created by Тарас Коцур on 19.06.2022.
 //
 
-#if os(iOS) || canImport(UIKit)
-
 import UIKit
 
 public protocol Coordinatable: AnyObject {
@@ -15,9 +13,7 @@ public protocol Coordinatable: AnyObject {
     var parent: Coordinatable? { get }
 
     func start(animated: Bool)
-    func start(coordinator: Coordinatable, animated: Bool)
     func finish(animated: Bool)
-    func finish(coordinator: Coordinatable, animated: Bool)
 }
 
 public extension Coordinatable {
@@ -30,5 +26,3 @@ public extension Coordinatable {
         coordinator.finish(animated: animated)
     }
 }
-
-#endif
