@@ -19,7 +19,7 @@ default_platform(:ios)
 project_name = 'CoordinatorKit'
 
 platform :ios do 
-  desc "Run tests with configuration options"
+  desc "Run tests"
   lane :tests do |options|
     device_name = options[:device] || 'iPhone 12'
 

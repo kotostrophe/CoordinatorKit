@@ -5,9 +5,6 @@
 //  Created by Тарас Коцур on 22.06.2022.
 //
 
-#if os(iOS) || canImport(UIKit)
-
-import Foundation
 import CoordinatorKit
 import UIKit
 
@@ -44,5 +41,3 @@ final class MockChildCoordinator: Coordinatable {
         delegate?.didFinishFlow(self)
     }
 }
-
-#endif

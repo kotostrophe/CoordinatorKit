@@ -1,5 +1,3 @@
-#if os(iOS) || canImport(UIKit)
-
 import XCTest
 @testable import CoordinatorKit
 
@@ -26,5 +24,3 @@ final class CoordinatorTests: XCTestCase {
         )
     }
 }
-
-#endif

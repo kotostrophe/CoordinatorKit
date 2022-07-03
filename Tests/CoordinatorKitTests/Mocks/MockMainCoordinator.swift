@@ -5,9 +5,6 @@
 //  Created by Тарас Коцур on 22.06.2022.
 //
 
-#if os(iOS) || canImport(UIKit)
-
-import Foundation
 import CoordinatorKit
 import UIKit
 
@@ -52,5 +49,3 @@ extension MockMainCoordinator: MockChildCoordinatorDelegate {
         childLocator.pop(coordinator)
     }
 }
-
-#endif
