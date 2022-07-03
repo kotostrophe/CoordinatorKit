@@ -27,7 +27,7 @@ or add it to the `dependencies` value of your `Package.swift`:
 
 ```swift
 dependencies: [
-    .package(url: "https://github.com/kotostrophe/CoordinatorKit", branch: "main")
+    .package(url: "https://github.com/kotostrophe/CoordinatorKit", .upToNextMinor(from: "1.0.0")),
 ]
 ```
 
