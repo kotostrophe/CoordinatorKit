@@ -2,8 +2,8 @@
 
 [![CI](https://github.com/kotostrophe/CoordinatorKit/actions/workflows/CoordinatorKitTests.yml/badge.svg?branch=main&event=push)](https://github.com/kotostrophe/CoordinatorKit/actions/workflows/CoordinatorKitTests.yml)
 
-![Social Banner](https://github.com/kotostrophe/CoordinatorKit/blob/master/Assets/about.png#gh-light-mode-only)
-![Social Banner Dark](https://github.com/kotostrophe/CoordinatorKit/blob/master/Assets/about.dark.png#gh-dark-mode-only)
+![Social Banner](https://github.com/kotostrophe/CoordinatorKit/blob/readme/Assets/about.png#gh-light-mode-only)
+![Social Banner Dark](https://github.com/kotostrophe/CoordinatorKit/blob/readme/Assets/about.dark.png#gh-dark-mode-only)
 
 Lightweight library to construct node-like structure to start flows. Good solution for non-storyboard projects.
 
